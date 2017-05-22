@@ -62,7 +62,7 @@ namespace BinaryClock
 			string curHour = Convert.ToString(CurrentHour, 2);
 
 
-			Console.WriteLine($"\r{curHour} - {curMin} - {curSec}");
+			Console.WriteLine($"{curHour} - {curMin} - {curSec}\n");
 		}
 	}
 }
