@@ -63,10 +63,7 @@ namespace BinaryClock
 
 
 			Console.WriteLine($"\r{curHour} - {curMin} - {curSec}");
-
-
 		}
-
 	}
 }
 
