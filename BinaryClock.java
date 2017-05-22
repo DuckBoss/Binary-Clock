@@ -1,9 +1,7 @@
 import java.time.LocalTime;
 
 public class BinaryClock {
-
 	public static void main(String[] args) throws InterruptedException {
-		
 		while(true) {
 			LocalTime time = LocalTime.now();
 			int curSec = time.getSecond();
@@ -14,8 +12,5 @@ public class BinaryClock {
 			System.out.println(timeFormat);
 			Thread.sleep(1000);
 		}
-		
-		
 	}
-
 }
