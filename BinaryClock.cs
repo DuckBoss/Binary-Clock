@@ -61,15 +61,8 @@ namespace BinaryClock
 			string curMin = Convert.ToString(CurrentMinute, 2);
 			string curHour = Convert.ToString(CurrentHour, 2);
 
-			int zeroCountSec = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(curSec.Length) / 8)) * 8;
-			int zeroCountMin = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(curMin.Length) / 8)) * 8;
-			int zeroCountHour = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(curHour.Length) / 8)) * 8;
 
-			string outputSec = curSec.PadLeft(zeroCountSec, '0');
-			string outputMin = curMin.PadLeft(zeroCountMin, '0');
-			string outputHour = curHour.PadLeft(zeroCountHour, '0');
-
-			Console.WriteLine($"\r{outputHour} - {outputMin} - {outputSec}");
+			Console.WriteLine($"\r{curHour} - {curMin} - {curSec}");
 
 
 		}
