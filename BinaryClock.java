@@ -6,7 +6,7 @@ public class BinaryClock {
 			LocalTime time = LocalTime.now();
 			int curSec = time.getSecond();
 			int curMin = time.getMinute();
-			int curHour = time.getMinute();
+			int curHour = time.getHour();
 			
 			String timeFormat = String.format("%s - %s - %s", Integer.toBinaryString(curHour), Integer.toBinaryString(curMin), Integer.toBinaryString(curSec));
 			System.out.println(timeFormat);
