@@ -3,13 +3,9 @@ import datetime
 
 while(True):
     curTime = datetime.datetime.now()
-    curSecond = curTime.second
-    curMinute = curTime.minute
-    curHour = curTime.hour
-
-    curSecondBin = "{0:b}".format(curSecond)
-    curMinuteBin = "{0:b}".format(curMinute)
-    curHourBin = "{0:b}".format(curHour)
-    outputString = '{} - {} - {}'.format(curHourBin, curMinuteBin, curSecondBin)
-    print (outputString)
+    curSecond = "{0:b}.format(curTime.second)
+    curMinute = "{0:b}.format(curTime.minute)
+    curHour = "{0:b}".format(curTime.hour)
+    
+    print ("{} - {} - {}".format(curHour, curMinute, curSecond))
     sleep(1)
