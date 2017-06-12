@@ -6,3 +6,4 @@ A Clock that shows the time in a binary format, in multiple programming language
 - C#
 - Java
 - Python
+- Kotlin
